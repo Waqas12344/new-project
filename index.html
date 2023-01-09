@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>UV school website</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+{% comment %} 
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0%;
+}
+
+nav img {
+    width: 70px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: small;
+  
+   
+   
+    cursor: pointer;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: darkblue;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+nav ul li:hover:after{
+    width: 100%;
+}
+
+/* ------- Image------ */
+.img-1 img {
+
+    width: 100%;
+    height: 410px;
+    margin: auto;
+
+}
+@media(max-width:700px){
+  .img-1{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* -----------Start Free trial---------- */
+.Start-1 {
+    width: 100%;
+    height: 70px;
+    background: darkblue;
+    justify-content: center;
+    padding-top: 35px;
+    text-align: center;
+    color: white;
+}
+
+
+.btn {
+    width: 100px;
+    height: 40px;
+    margin: 0 0 3px 9px;
+    border-radius: 9px;
+    font-size: large;
+    background-color: white;
+    color: darkblue;
+}
+.btn:hover{
+    border: 1px solid white;
+    background: darkblue;
+    color: white;
+    transition: 1s ;
+}
+@media(max-width:700px){
+   .btn{
+    width: 90px;
+    height: 30px;
+    font-size: small;
+    border-radius: 8px;
+   }
+   .start{
+    font-size: medium;
+   }
+  }
+
+/* ------features    --- */
+.features {
+    text-align: center;
+   
+    width: 100%;
+    height: 100px;
+
+}
+
+.col-3 {
+    flex-basis: 20%;
+    width: 90%;
+    margin: auto;
+    display: inline-block;
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+    }
+}
+
+
+/* ----features--- */
+.features {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.features h2{
+    color: darkblue;
+}
+ 
+
+.row {
+    margin: 5% 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-col {
+    flex-basis: 31%;
+    background:white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    color: darkblue;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.features-col:hover {
+    box-shadow: 0 0 20px lightblue;
+}
+@media(max-width:700px){
+    .features h2{
+        font-size: medium;
+        padding: 0 5px;
+    }
+}
+/* ------MAZING FEATURES & FLEXIBILITY PROVIDED------ */
+.Flexibility {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: darkblue;
+
+}
+.Flexibility h2{
+    color: white;
+}
+ 
+
+.row {
+    margin: 5% 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Flexibility-col {
+    flex-basis: 31%;
+    background:white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    color: darkblue;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.Flexibility-col:hover {
+    box-shadow: 0 0 20px lightblue;
+}
+
+
+
+.footer{
+    background: darkblue;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding:60px 0 20px  ;
+}
+.footer p{
+    color: #8a8a8a;
+
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+ width: 180px;
+ margin-bottom:20px ;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin: top 20px ;
+
+}
+.app-logo img{
+    width: 140px;
+}
+ hr{
+    border:none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+
+}
+.copyright{
+    text-align: center;
+}
+
+/* .footer{
+    width: 90%;
+    height: 200px;
+    position: absolute;
+}
+.col-4{
+    flex-basis: 22%;
+} */
+</style> {% endcomment %}
+
+<body>
+    <section class="header">
+        <nav >
+            <a href="index.html"><img class="img" src="image/logo.jpeg" alt="school logo"></a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html"> FEATURES<a></li>
+                <li><a href="index.html">Mobile App</a></li>
+                <li><a href="index.html">CONTACT US</a></li>
+                <li><a href="index.html">GET STARTED</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- ------ Image  ------ -->
+    <section class="image">
+        <div class="img-1">
+            <img src="image/img-1.png" alt="">
+        </div>
+    </section>
+
+    <!-- ----  Start Free Trial---- -->
+
+    <section class="Start-1">
+    
+            <div class="col">
+                <h2><span class="start"> Start Free Trial</span> <a href=""><button class="btn">Trial Now!</button></a></h2>
+            </div> 
+        
+    </section>
+
+    <!-- ----- features ----- -->
+
+    <section class="features">
+        <h2>SIMPLE, POWERFUL & AFFORDABLE SCHOOL MANAGEMENT SYSTEM</h2>
+        
+        <div class="row">
+
+            <div class="features-col">
+                <h3>SIMPLE & Easy To Use</h3>
+                <p>Designed to engage teachers and parents. No expertise required to quickly accomplish a task.
+                    </p>
+            </div>
+            <div class="features-col">
+                <h3>SIMPLE & Easy To Use</h3>
+                <p>
+                    All our plans are affordable and come with Unlimited Features
+                    </p>
+            </div>
+            <div class="features-col">
+                <h3>SIMPLE & Easy To Use</h3>
+                <p>We provide everything you will ever need to run an educational institution.
+                    </p>
+            </div>
+           
+        </div>
+        <div class="Flexibility">
+        <h2>AMAZING FEATURES & FLEXIBILITY PROVIDED</h2>
+        <div class="row">
+
+            <div class="Flexibility-col">
+                <h3>MULTI USER</h3>
+                <p>UVSchools provides the multi user system for each employee and Teacher of a School with their distinct logins. It really helps and minimize the workload
+                    </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>MULTI LANGUAGE</h3>
+                <p>
+                    UVSchools automatically detects your preferred language and translates the entire system in your native language. You can also change the language wit..
+                    </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>STUDENT & EMPLOYEE ATTENDANCE</h3>
+                <p>Mark and track your Student and employee attendance systematically. Manual attendance is a time killing process that indirectly effects th..
+                    </p>
+            </div>
+        
+        </div>
+        <div class="row">
+
+            <div class="Flexibility-col">
+                <h3>CLASSES & BATCHES</h3>
+                <p> Create and manage all classes, sections and batches of your School. System supports the Admin to keep the all records and simplifies the tasks to</p>
+            </div>
+            <div class="Flexibility-col">
+                <h3> MESSAGING</h3>
+                <p>Keep the users up-to-date with secure, fast and cost-effective messaging system of UVSchools. It strengthens the relationship among parents, teachers.. </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>ACADEMICS</h3>
+                <p>
+                    Easily Schedule and manage your school timetable of each subject for all classes. Now track your every employee performance with their work monitorin
+                    </p>
+            </div>
+        
+        </div>
+        <div class="row">
+
+            <div class="Flexibility-col">
+                <h3>TRASH</h3>
+                <p>UVSchools recycles all the deleted items saved in the trash pin, and makes it easy to review and recover them back. </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>REPORTS</h3>
+                <p> Get all information of your school in comprehensive form of Reports. With UVSchools report center, admin can create multiple reports, easily access </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>ACCOUNTS</h3>
+                <p>
+                    Create a virtual account of your School for all financial and business transactions. Account module records and manages your all incomes and am...
+                    </p>
+            </div>
+        
+        </div>
+        <div class="row">
+
+            <div class="Flexibility-col">
+                <h3>PAYROLL</h3>
+                <p> UVSchools payroll module simplifies the salary management for all employees, Teachers and other staff members as well. You can easily manage each </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>ANNOUNCEMENTS</h3>
+                <p>Maintain your School’s daily events in calendar, go paperless and save time. Share the latest news and important announcements with your employees, </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>USER MANAGMENT</h3>
+                <p>As Admin you can manage all employees of all departments to have complete record in one platform.The system provides all details of your school </p>
+            </div>
+            <hr>
+        
+        </div>
+        <div class="row">
+
+            <div class="Flexibility-col">
+                <h3>PAYROLL</h3>
+                <p> UVSchools payroll module simplifies the salary management for all employees, Teachers and other staff members as well. You can easily manage each </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>ANNOUNCEMENTS</h3>
+                <p>Maintain your School’s daily events in calendar, go paperless and save time. Share the latest news and important announcements with your employees, </p>
+            </div>
+            <div class="Flexibility-col">
+                <h3>USER MANAGMENT</h3>
+                <p>As Admin you can manage all employees of all departments to have complete record in one platform.The system provides all details of your school </p>
+            </div>
+        </div>     
+    </div><hr>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quae hic eos?</p>
+                    <div class="app-logo">
+                        <img src="image/play-store.png" alt="">
+                        <img src="image/app-store.png" alt="">
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="image/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quae hic eos?</p>
+                    
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyrigh 2022 - Veke web developer
+            </p>
+        </div>
+    </div>
+    </section>
+
+
+</body>
+
+</html>
